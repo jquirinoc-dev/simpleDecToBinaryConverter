@@ -24,7 +24,7 @@ def decToBinary(bits, input):
     outputString = ""
     currentString = ""
 
-    if input  >= -2147483648 and input <= 2147483647:
+    if input  >= -2147483648 and input <= 2147483648:
 
         for i in bits:
             if suma + i[1] <= abs(input):
@@ -50,6 +50,6 @@ def decToBinary(bits, input):
 output = decToBinary(bits, input)
 
 if output == "":
-    print("El numero introducido no es valido")
+    print("Number in not valid")
 else:
     print(output)
